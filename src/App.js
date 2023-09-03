@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import MyComponent1 from './component/component1';
+import Text1 from './component/Text';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="main">
+        {/* <Navbar /> */}
+
+        <section className="firstSection">
+          <div className="left">
+            <Text1/>
+          </div>
+          <div className="right">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+              alt="Profile"
+              //className="profile-pic"
+            />
+          </div>
+        </section>
+        <center>
+          <MyComponent1/></center>
+        
+      </div>
+    </>
   );
 }
 

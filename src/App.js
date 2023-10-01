@@ -1,16 +1,19 @@
-import './App.css';
-import MyComponent1 from './component/component1';
-import Text1 from './component/Text';
+import "./App.css";
+import MyComponent1 from "./component/component1";
+import Typewriter from "react-simple-typewriter";
+import Text1 from "./component/Text";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
+import Navbar from "./component/Navbar";
 
 function App() {
   return (
     <>
       <div className="main">
-        {/* <Navbar /> */}
+        <Navbar/>
 
         <section className="firstSection">
           <div className="left">
-            <Text1/>
+            <Text1 />
           </div>
           <div className="right">
             <img
@@ -21,8 +24,8 @@ function App() {
           </div>
         </section>
         <center>
-          <MyComponent1/></center>
-        
+          <MyComponent1 />
+        </center>
       </div>
     </>
   );

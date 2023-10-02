@@ -4,6 +4,8 @@ import Typewriter from "react-simple-typewriter";
 import Text1 from "./component/Text";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Navbar from "./component/Navbar";
+import Slider from "./component/Slider";
+
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
             />
           </div>
         </section>
+        <hr className="divider" />
+        <Slider/>
         <center>
           <MyComponent1 />
         </center>

@@ -27,7 +27,7 @@ function App() {
         <hr className="divider" />
         <Slider />
         <center>
-          <MyComponent1 />
+          <MyComponent1/>
         </center>
       </div>
     </>

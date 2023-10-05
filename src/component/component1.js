@@ -29,6 +29,8 @@ export default function MyComponent1() {
         </div>
         <div className="text">
           <h1>Skills & Experiences</h1>
+        </div>
+        <div className="text">
           <p>
             With a robust skill set and extensive experience in my field, I
             consistently deliver exceptional results, demonstrating a high level
@@ -37,11 +39,30 @@ export default function MyComponent1() {
         </div>
         <div className="skill-pic">
           <img
-            src={Css}
+            src={flutter}
             class="d-block w-100"
             alt="Profile"
             //style={{ background: 'transparent', border: 'none' }}
-          />
+            
+          />{"  "}
+          <img
+            src={js}
+            class="d-block w-100"
+            alt="Profile"
+            //style={{ background: 'transparent', border: 'none' }}
+          />{"  "}
+          <img
+            src={python}
+            class="d-block w-100"
+            alt="Profile"
+            //style={{ background: 'transparent', border: 'none' }}
+          />{"  "}
+          <img
+            src={Bootstrap}
+            class="d-block w-100"
+            alt="Profile"
+            //style={{ background: 'transparent', border: 'none' }}
+          />{"   "}
         </div>
       </div>
     </div>

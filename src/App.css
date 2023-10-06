@@ -1,38 +1,16 @@
+/* app css here */
 .main {
   background-color: rgb(0, 0, 33);
   color: aliceblue;
 }
-.texttt {
-  color: aqua;
-}
 
-
-.hell {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 50px;
-  color: aliceblue;
-  text-align: center;
-  background-color: #0056b3;
-  margin-top: 10px;
-  width: 800px;
-  height: 400px;
-}
 .firstSection {
   display: flex;
   justify-content: space-around;
-  margin: 60px;
+  margin : 60px;
   padding-top: 20px;
 }
-.slid {
-  padding: 50px;
-  margin: 00px 200px 00px 200px;
-  height: 700px;
-  width: 900px;
-  /* padding-left: 100px; */
-}
+
 .firstSection > div {
   width: 40%;
 }
@@ -51,10 +29,69 @@
 .right img {
   width: 70%;
 }
-.container {
-  display: flex;
-  flex-direction: row;
+
+.profile-pic {
+  width: 200px;
+  height: auto;
+  position: relative;
+  top: -80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #0056b3;
 }
+/* component */
+/* component css here */
+.hell {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50px;
+  color: aliceblue;
+  text-align: center;
+  background-color: rgb(10, 10, 56);
+  margin-top: 10px;
+  width: 1000px;
+  height: 400px;
+}
+.text {
+  font-family: Arial, sans-serif;
+}
+
+.circl {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 30px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0477f3;
+}
+/* 
+Slider
+slider css */
+
+.slid {
+  /* padding: 50px; */
+  margin: 00px 200px 00px 200px;
+  height: 700px;
+  width: 900px;
+  /* padding-left: 100px; */
+}
+/* 
+text file
+text field css */
+
 .tex {
   color: white;
   display: flex;
@@ -72,41 +109,8 @@
   font-family: Arial, sans-serif;
 }
 
-.profile-pic {
-  width: 200px;
-  height: auto;
-  position: relative;
-  top: -80px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid #0056b3;
-}
-
-.text {
-  font-family: Arial, sans-serif;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0477f3;
-}
-
-.skill-pic {
-  width: 70px;
-  height: 60px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  /* border-radius: 50%; */
-  /* margin: 0 10px; */
+.texttt {
+  color: aqua;
 }
 
 /* navbar */
@@ -134,6 +138,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .circles {

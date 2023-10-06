@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function MyComponent1() {
+export default function MyComponent2() {
   const imageUrl = "https://cdn-icons-png.flaticon.com/512/3135/3135715.png";
   const flutter =
     "https://raw.githubusercontent.com/dnfield/flutter_svg/7d374d7107561cbd906d7c0ca26fef02cc01e7c8/example/assets/flutter_logo.svg?sanitize=true";
@@ -16,7 +16,7 @@ export default function MyComponent1() {
     "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/1024px-HTML5_Badge.svg.png";
   const Css =
     "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/340px-CSS3_logo_and_wordmark.svg.png";
-    const wordpress =
+  const wordpress =
     "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Wordpress-Logo.svg/2048px-Wordpress-Logo.svg.png";
 
   return (
@@ -30,13 +30,13 @@ export default function MyComponent1() {
           /> */}
         </div>
         <div className="text">
-          <h1>Skills & Experiences</h1>
+          <h1>Featured Projects</h1>
         </div>
         <div className="text">
           <p>
-            With a robust skill set and extensive experience in my field, I
-            consistently deliver exceptional results, demonstrating a high level
-            of professionalism and expertise.
+            Brief intro goes here. My main experience lies in the building of
+            the real world. I'm currently working on donation website for BMC
+            university
           </p>
         </div>
         <div className="center">
@@ -48,23 +48,6 @@ export default function MyComponent1() {
           </div>
           <div className="circl">
             <img src={js} class="d-block w-100" alt="..." />{" "}
-          </div>
-          <div className="circl">
-            <img src={python} class="d-block w-100" alt="..." />{" "}
-          </div>
-        </div>
-        <div className="center">
-          <div className="circl">
-            <img src={html} class="d-block w-100" alt="..." />{" "}
-          </div>
-          <div className="circl">
-            <img src={Css} class="d-block w-100" alt="..." />{" "}
-          </div>
-          <div className="circl">
-            <img src={Bootstrap} class="d-block w-100" alt="..." />{" "}
-          </div>
-          <div className="circl">
-            <img src={wordpress} class="d-block w-100" alt="..." />{" "}
           </div>
         </div>
       </div>

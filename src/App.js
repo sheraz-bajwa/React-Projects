@@ -33,6 +33,9 @@ function App() {
         <center>
           <MyComponent2/>
         </center>
+        <center>
+          <MyComponent1/>
+        </center>
       </div>
     </>
   );

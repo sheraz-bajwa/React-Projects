@@ -1,4 +1,5 @@
 import React from "react";
+import MyComponent4 from "./Proj";
 import Box from "./Proj";
 
 export default function MyComponent2() {
@@ -23,7 +24,7 @@ export default function MyComponent2() {
           </p>
         </div>
         <div className="center">
-          <Box/>
+          <MyComponent4/>
         </div>
       </div>
     </div>

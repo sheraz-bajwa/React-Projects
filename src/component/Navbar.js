@@ -5,7 +5,7 @@ export default function Navbar() {
     <div>
       <nav className="navbar">
         <div className="left1">
-          <span className="logo">Your Logo</span>
+          <span className="logo">Portfolio.</span>
         </div>
         <div className="center">
           <div className="circles">

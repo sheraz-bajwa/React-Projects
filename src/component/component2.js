@@ -1,6 +1,5 @@
 import React from "react";
-import MyComponent4 from "./Proj";
-import Box from "./Proj";
+import Card from "./Card";
 
 export default function MyComponent2() {
   return (
@@ -24,7 +23,7 @@ export default function MyComponent2() {
           </p>
         </div>
         <div className="center">
-          <MyComponent4/>
+          <Card/>
         </div>
       </div>
     </div>

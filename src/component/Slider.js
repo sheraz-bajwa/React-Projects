@@ -1,4 +1,8 @@
 import React from "react";
+import myImage1 from '../assets/covidApp.png';
+import myImage2 from '../assets/MovieApp.png';
+import myImage3 from '../assets/weatherApp.png';
+import myImage4 from '../assets/NewsAPp.png';
 
 export default function Slider() {
   return (
@@ -8,21 +12,27 @@ export default function Slider() {
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img
-            src="https://www.pole-emploi.fr/files/live/sites/PE/files/actualites/vignetteideee62655.jpg"
+            src={myImage1}
             class="d-block w-100"
             alt="..."
           />
         </div>
         <div class="carousel-item">
           <img
-            src="https://www.agera.asso.fr/app/uploads/2020/08/Projet.jpg"
+            src={myImage2}
             class="d-block w-100"
             alt="..."
           />
         </div>
         <div class="carousel-item">
           <img
-            src="https://www.pole-emploi.fr/files/live/sites/PE/files/actualites/vignetteideee62655.jpg"
+            src={myImage3}
+            class="d-block w-100"
+            alt="..."
+          />
+        </div><div class="carousel-item">
+          <img
+            src={myImage4}
             class="d-block w-100"
             alt="..."
           />

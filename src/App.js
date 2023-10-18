@@ -7,6 +7,8 @@ import Navbar from "./component/Navbar";
 import Slider from "./component/Slider";
 import MyComponent2 from "./component/component2";
 import myImage from './assets/profile.png';
+import Skills from "./component/Skill";
+import Footer from "./component/Footer";
 function App() {
   return (
     <>
@@ -26,17 +28,24 @@ function App() {
           </div>
         </section>
         <hr className="divider" />
+        <center>
+          <h1 className="Heading"> 
+            Projects
+          </h1>
+        </center>
         <Slider />
         <center>
           <MyComponent1/>
         </center>
-        <center>
-          <MyComponent2/>
-        </center>
+        <center><h1 className="Heading"> 
+            Skills
+          </h1></center>
+        <Skills/>
         <center>
           <MyComponent1/>
         </center>
       </div>
+    <Footer/>
     </>
   );
 }

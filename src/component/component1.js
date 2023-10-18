@@ -17,7 +17,7 @@ export default function MyComponent1() {
   const Css =
     "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/340px-CSS3_logo_and_wordmark.svg.png";
     const wordpress =
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Wordpress-Logo.svg/2048px-Wordpress-Logo.svg.png";
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Firebase_Logo.svg/1200px-Firebase_Logo.svg.png";
 
   return (
     <div>
@@ -64,7 +64,7 @@ export default function MyComponent1() {
             <img src={Bootstrap} class="d-block w-100" alt="..." />{" "}
           </div>
           <div className="circl">
-            <img src={wordpress} class="d-block w-100" alt="..." />{" "}
+            <img src={wordpress} class="d-block w-100" height={40} width={40} alt="..." />{" "}
           </div>
         </div>
       </div>

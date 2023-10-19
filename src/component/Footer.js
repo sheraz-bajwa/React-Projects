@@ -1,31 +1,42 @@
-import React from 'react';
-import '../Footer.css'; // Import the CSS file
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
+import React from "react";
+import "../Footer.css"; // Import the CSS file
+import {
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedin,
+  FaGithub,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-left">
-          <h3>Your Company Name</h3>
-          <p>Contact: sheezybajwa@gmail.com</p>
-          <div className="social-icons">
-            <a href="#">
-              <FaFacebook size={30} />
-            </a>
-            <a href="#">
-              <FaTwitter size={30} />
-            </a>
-            <a href="#">
-              <FaInstagram size={30} />
-            </a>
-            <a href="#">
-                <FaGithub size={30}/>
-            </a>
-          </div>
+          <h3>.</h3>
+         
         </div>
-        <div className="footer-right">
+        <div className="footer-center">
+          <div className="social-icons">
+            <a href="#" className="cnt">
+              <FaLinkedin size={15} />
+            </a>{" "}
+            <a href="#" className="cnt">
+              <FaGithub size={15} />
+            </a>{" "}
+            <a href="#" className="cnt">
+              <FaTwitter size={15} />
+            </a>{" "}
+            <a href="#" className="cnt">
+              <FaFacebook size={15} />
+            </a>
+           
+          </div>
           <p>&copy; 2023 All rights reserved</p>
+         
+          </div>
+        <div className="footer-right">
+           <p>.</p>
         </div>
       </div>
     </footer>

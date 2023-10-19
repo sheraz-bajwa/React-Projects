@@ -102,7 +102,7 @@ container css */
   align-items: center;
   flex-direction: column;
   border-radius: 50px;
-  color: aliceblue;
+  color: darkgrey;
   text-align: center;
   background-color: rgb(10, 10, 56);
   margin-top: 10px;
@@ -136,13 +136,6 @@ button:hover {
 Slider
 slider css */
 
-.slid {
-  /* padding: 50px; */
-  margin: 00px 200px 00px 200px;
-  height: 700px;
-  width: 900px;
-  /* padding-left: 100px; */
-}
 /* 
 text file
 text field css */

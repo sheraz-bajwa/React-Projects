@@ -1,0 +1,17 @@
+
+.slid {
+    /* padding: 50px; */
+    margin: 00px 200px 00px 200px;
+    height: 700px;
+    width: 900px;
+    /* padding-left: 100px; */
+  }
+  .fullscreen {
+    width: 100%;
+    height: 110vh; /* 100% of the viewport height */
+    display: flex;
+    justify-content: center;
+    background-color: rgb(17,17,17);
+    align-items: center;
+  }
+  

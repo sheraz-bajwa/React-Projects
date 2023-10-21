@@ -1,4 +1,5 @@
 import React from "react";
+import { useSpring, animated, config } from "react-spring";
 import myImage1 from "../assets/covidApp.png";
 import myImage2 from "../assets/MovieApp.png";
 import myImage3 from "../assets/weatherApp.png";
@@ -6,19 +7,26 @@ import myImage4 from "../assets/NewsAPp.png";
 import "../css/Slider.css"; // Import the CSS file
 
 export default function Slider() {
+  // Define a spring animation for the slide-in effect
+  const slideIn = useSpring({
+    from: { opacity: 0, transform: "translateX(-100%)" },
+    to: { opacity: 1, transform: "translateX(0)" },
+    config: config.wobbly, // You can adjust the animation config
+  });
+
   return (
     <div className="fullscreen">
-      <div className="slid">
+      <animated.div style={slideIn} className="slid">
         <center>
           <h1 className="Heading">Projects</h1>
         </center>
-        <div id="carouselExampleCaptions" class="carousel slide">
-          <div class="carousel-indicators">
+        <div id="carouselExampleCaptions" className="carousel slide">
+          <div className="carousel-indicators">
             <button
               type="button"
               data-bs-target="#carouselExampleCaptions"
               data-bs-slide-to="0"
-              class="active"
+              className="active"
               aria-current="true"
               aria-label="Slide 1"
             ></button>
@@ -35,55 +43,51 @@ export default function Slider() {
               aria-label="Slide 3"
             ></button>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src={myImage1} class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>
-                  Some representative placeholder content for the first slide.
-                </p>
+        
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img src={myImage1} className="d-block w-100" alt="Project 1" />
+              <div className="carousel-caption d-none d-md-block">
+                <h5>Project 1</h5>
+                <p>Description of Project 1</p>
               </div>
             </div>
-            <div class="carousel-item">
-              <img src={myImage2} class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>
-                  Some representative placeholder content for the second slide.
-                </p>
+            <div className="carousel-item">
+              <img src={myImage2} className="d-block w-100" alt="Project 2" />
+              <div className="carousel-caption d-none d-md-block">
+                <h5>Project 2</h5>
+                <p>Description of Project 2</p>
               </div>
             </div>
-            <div class="carousel-item">
-              <img src={myImage3} class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>
-                  Some representative placeholder content for the third slide.
-                </p>
+            <div className="carousel-item">
+              <img src={myImage3} className="d-block w-100" alt="Project 3" />
+              <div className="carousel-caption d-none d-md-block">
+                <h5>Project 3</h5>
+                <p>Description of Project 3</p>
               </div>
             </div>
           </div>
           <button
-            class="carousel-control-prev"
+            className="carousel-control-prev"
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
           </button>
           <button
-            class="carousel-control-next"
+            className="carousel-control-next"
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide="next"
           >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
           </button>
         </div>
-      </div>{" "}
+        
+      </animated.div>
     </div>
   );
 }

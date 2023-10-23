@@ -10,12 +10,12 @@ export default function Navbar() {
         </div>
         <div className="center">
           <div className="circles">
-          <a href="#">
+          <a href="https://www.linkedin.com/in/muhammad-sheraz-ramzan/">
               <FaLinkedin size={30} color="darkgrey"/>
             </a>
           </div>
           <div className="circles">
-          <a href="#">
+          <a href="https://github.com/sheraz-bajwa">
               <FaGithub size={30} color="darkgrey"/>
             </a>
           </div>

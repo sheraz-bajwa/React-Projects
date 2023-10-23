@@ -37,3 +37,14 @@
 .carousel-control-prev-icon, .carousel-control-next-icon {
   color: #fff; /* Change the color of control buttons */
 }
+/* Add this CSS for the button animation */
+.carousel-control-prev span,
+.carousel-control-next span {
+  display: inline-block;
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Existing CSS */
+/* .slid, .fullscreen, .carousel-inner, .carousel-caption - Keep your existing styles as they are */
+/* .carousel-control-prev, .carousel-control-next - Keep your existing styles as they are */

@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/Component1.css"; // Import the CSS file
 
 export default function MyComponent1() {
   const imageUrl = "https://cdn-icons-png.flaticon.com/512/3135/3135715.png";

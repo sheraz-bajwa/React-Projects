@@ -96,42 +96,7 @@ container css */
 }
 /* component */
 /* component css here */
-.hell {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 50px;
-  color: darkgrey;
-  text-align: center;
-  background-color: rgb(10, 10, 56);
-  margin-top: 10px;
-  width: 1000px;
-  height: 400px;
-}
-.text {
-  font-family: Arial, sans-serif;
-}
 
-.circl {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin: 0 30px;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0477f3;
-}
 /* 
 Slider
 slider css */
@@ -139,37 +104,3 @@ slider css */
 /* 
 text file
 text field css */
-
-.tex {
-  color: white;
-  display: flex;
-  font-size: 40px;
-  color: aliceblue;
-  text-align: center;
-  font-family: 'Times New Roman', Times, serif;
-
-}
-.haq {
-  color: white;
-  display: flex;
-  font-size: 40px;
-  color: aliceblue;
-  text-align: center;
-  font-family: 'Times New Roman', Times, serif;
-}
-.nam{
-  color: aqua;
-  font-family: 'Times New Roman', Times, serif;
-
-  font-size: 30px;
-}
-.texttt {
-  font-family: 'Times New Roman', Times, serif;
-
-  color: aqua;
-}
-
-/* navbar */
-/* src/components/Navbar.css */
-/* /////////////////////////////////
-Slill section css */

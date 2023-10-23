@@ -1,0 +1,32 @@
+
+.tex {
+    color: white;
+    display: flex;
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  
+  }
+  .haq {
+    color: white;
+    display: flex;
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .nam{
+    color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+  
+    font-size: 30px;
+  }
+  .texttt {
+    font-family: 'Times New Roman', Times, serif;
+  
+    color: aqua;
+  }
+  
+  
+  

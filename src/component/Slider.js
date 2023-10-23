@@ -1,4 +1,5 @@
 import React from "react";
+
 import { useSpring, animated, config } from "react-spring";
 import myImage1 from "../assets/covidApp.png";
 import myImage2 from "../assets/MovieApp.png";
@@ -12,6 +13,10 @@ export default function Slider() {
     from: { opacity: 0, transform: "translateX(-100%)" },
     to: { opacity: 1, transform: "translateX(0)" },
     config: config.wobbly, // You can adjust the animation config
+  });
+  const buttonAnimation = useSpring({
+    to: { transform: "scale(1)" },
+    from: { transform: "scale(0.8)" },
   });
 
   return (
@@ -43,7 +48,7 @@ export default function Slider() {
               aria-label="Slide 3"
             ></button>
           </div>
-        
+
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img src={myImage1} className="d-block w-100" alt="Project 1" />
@@ -73,7 +78,11 @@ export default function Slider() {
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev"
           >
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <animated.span
+              style={buttonAnimation}
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></animated.span>
             <span className="visually-hidden">Previous</span>
           </button>
           <button
@@ -82,11 +91,14 @@ export default function Slider() {
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide="next"
           >
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <animated.span
+              style={buttonAnimation}
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></animated.span>
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-        
       </animated.div>
     </div>
   );

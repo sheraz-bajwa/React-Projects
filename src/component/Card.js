@@ -1,30 +1,32 @@
 import React from "react";
+import myImage1 from "../assets/covidApp.png";
+import PropTypes from "prop-types";
 
-export default function Card() {
+export default function Project(props) {
   const cardStyle = {
     width: "18rem",
-    Height: "15rem",
-    // You can add more style properties here
   };
 
   return (
-    <div>
-      <div className="card" style={cardStyle}>
-        <img
-          src="https://cdn.pixabay.com/photo/2015/05/02/08/02/angel-749625_1280.jpg"
-          className="card-img-top"
-          alt="..."
-        />
-        <div className="card-body">
-          <h5 className="card-title">Card title</h5>
-          <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" className="btn btn-primary">
-            Go somewhere
-          </a>
-        </div>
+
+    <div className="card" style={cardStyle}>
+      <img src={myImage1} className="card-img-top" alt="Project Image" />
+      <div className="card-body">
+        <h5 className="card-title">{props.title}</h5>
+        <p className="card-text">
+         {props.description}
+          {/* Some quick example text to build on the card title and make up the
+          bulk of the card's content. */}
+        </p>
+      </div>
+
+      <div className="card-body">
+        <a href="#" className="card-link">
+          Card link
+        </a>
+        <a href="#" className="card-link">
+          Another link
+        </a>
       </div>
     </div>
   );

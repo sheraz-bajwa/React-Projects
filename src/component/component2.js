@@ -1,17 +1,11 @@
 import React from "react";
 import Card from "./Card";
+import "../css/component2.css"; // Import the CSS file
 
 export default function MyComponent2() {
   return (
     <div>
       <div className="hell">
-        <div className="circle">
-          {/* <img
-            src={imageUrl}
-            alt="Profile"
-            className="profile-pic"
-          /> */}
-        </div>
         <div className="text">
           <h1>Featured Projects</h1>
         </div>
@@ -23,7 +17,7 @@ export default function MyComponent2() {
           </p>
         </div>
         <div className="center">
-          <Card/>
+          <Card/><Card/><Card/>
         </div>
       </div>
     </div>

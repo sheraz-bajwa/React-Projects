@@ -9,7 +9,6 @@ import MyComponent2 from "./component/component2";
 import myImage from "./assets/profile.png";
 import Skills from "./component/Skill";
 import Footer from "./component/Footer";
-import Project from "./component/Project";
 function App() {
   return (
     <>
@@ -29,9 +28,12 @@ function App() {
           </div>
         </section>
         <hr className="divider" />
-        
+
         <Slider />
-        <Project/>
+        <center>
+          
+          <MyComponent2 />
+        </center>
         <center>
           <MyComponent1 />
         </center>
